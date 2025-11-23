@@ -1,3 +1,16 @@
+function handleScroll() {
+    const nav = document.querySelector('nav');
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > 100) { // Threshold: Fix after scrolling 100px (adjust as needed)
+        nav.classList.add('fixed');
+    } else {
+        nav.classList.remove('fixed');
+    }
+}
+// Attach the scroll event listener
+window.addEventListener('scroll', handleScroll);
+
 // Function for section1 carousel (3 cards at a time with infinite loop)
 function moveCarousel(direction) {
     const carousel = document.getElementById('carousel');

@@ -16,8 +16,19 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    position: relative; 
+    position: relative; /* Default: not fixed */
     font-weight: bold;
+    width: 100%;
+    z-index: 1000; /* Ensures it stays above other content */
+    transition: all 0.3s ease; /* Smooth transition when fixing */
+}
+/* Fixed state: Applied via JS when scrolled */
+nav.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
+    /* Optional: Adjust padding or height if needed for better fit */
 }
 
 .logo {
@@ -191,7 +202,7 @@ footer {
 }
 
 .left-arrow {
-    left: -50px;
+    left: -40px;
     position: relative;
     width: 40px;
     height: 40px;
@@ -386,7 +397,7 @@ footer {
 
 .section3_1 .carousel-wrapper {
     overflow: hidden;
-    width: 960px;
+    width: 970px;
 }
 
 .section3_1 .carousel-track {
@@ -400,3 +411,38 @@ footer {
     height: 400px; 
     flex: 0 0 auto;
     border: 10px solid #f1f1f1;}
+
+
+.section3_1 .left-arrow {
+    position: absolute;
+    left: 100px; /* Adjust as needed to sit just outside the carousel */
+    top: 50%;
+    transform: translateY(-50%); /* Centers vertically */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+    color: #2d2a2a;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.section3_1 .right-arrow {
+    position: absolute;
+    right: 100px; /* Adjust as needed to sit just outside the carousel */
+    top: 50%;
+    transform: translateY(-50%); /* Centers vertically */
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ffffff;
+    color: #2d2a2a;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
