@@ -26,7 +26,7 @@ nav {
 }
 
 nav a, .dropbtn {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat';
     color: rgb(1, 4, 47);
     margin: 0 15px;
     text-decoration: none;
@@ -96,7 +96,6 @@ nav a, .dropbtn {
 }
 
 .section1 { background-image: url('images/BG-1.png'); }
-.section2 { background-image: url('images/BG-2.png'); }
 .section3_1 { background-image: url('images/BG-3.1.png'); }
 .section3 { background-image: url('images/BG-3.png'); }
 .section4 { background-image: url('images/BG-4.png'); }
@@ -182,47 +181,6 @@ footer {
     margin-top: 5px;
 }
 
-.left {
-    left: -200px;
-    bottom: -240px;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    background-color: #012775;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin: 0 10px;
-    z-index: 10;
-}
-
-.right {
-    right: -200px;
-    top: -240px;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: none;
-    background-color: #012775;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 1.5rem;
-    cursor: pointer;
-    margin: 0 10px;
-    z-index: 10;
-}
-
-.left:hover {
-    background-color: #01287569;
-}
-
-.right:hover {
-    background-color: #01287569;
-}
 
 .left-arrow:hover {
     background-color: #ffffff5c;
@@ -263,22 +221,36 @@ footer {
     margin: 0 10px;
     z-index: 10;
 }
-.section2 h1 {
-    font-size: 4rem;
-    font-weight: bold;
-    margin-top: -50px;
-    margin-bottom: 20px;
-}
-.section2 .carousel {
-    position: relative;
+/* Section 2: Two-column layout */
+.section2 {
+    background-image: url('images/BG-2.png');
+    /* Remove default centering; we'll handle layout inside */
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
+}
+
+.section2-container {
+    display: flex;
+    align-items: flex-start; /* Align top for better spacing */
+    justify-content: space-between;
     width: 100%;
+    max-width: 1200px; /* Prevent it from stretching too wide */
+    gap: 40px; /* Space between columns */
+}
+
+/* Left column: Carousel */
+.carouselSection2 {
+    position: relative; /* For absolute arrow positioning */
+    flex: 1; /* Takes up available space */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .section2 .carousel-window {
-    width: 300px; 
+    width: 300px;
     overflow: hidden;
 }
 
@@ -289,8 +261,8 @@ footer {
 }
 
 .section2 .card {
-    width: 270px; 
-    height: 400px; 
+    width: 270px;
+    height: 400px;
     flex: 0 0 auto;
     border: 10px solid #012775;
     margin-left: 5px;
@@ -309,14 +281,14 @@ footer {
 
 .section2 .card img {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     object-fit: cover;
     display: block;
 }
 
 .section2 .caption {
     position: absolute;
-    bottom: 0; 
+    bottom: 0;
     left: 0;
     width: 120%;
     color: #ffffff;
@@ -328,9 +300,80 @@ footer {
     margin-left: -25px;
 }
 
+/* Arrows: Positioned absolutely next to the carousel */
+.arrow.left {
+    position: absolute;
+    left: 50px; /* Adjust to sit just outside the carousel window */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #012775;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow.right {
+    position: absolute;
+    right: 50px; /* Adjust to sit just outside the carousel window */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    background-color: #012775;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.arrow.left:hover,
+.arrow.right:hover {
+    background-color: #01287569;
+}
+
+/* Right column: Header, Image, Paragraph */
+.right-content {
+    flex: 1; /* Takes up available space */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.section2 h1 {
+    margin-top: 30px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #000;
+    font-family:'Montserrat';}
+
 .section2 img {
-    width: 30%;
-    display: block;
+    width: 100%;
+    height: auto;
+    margin-bottom: 0px;
+}
+.section2 img:hover{
+    transform: scale(1.05);
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.section2 p {
+    font-size: 1rem;
+    max-width: 500px;
+    line-height: 1.5;
+    color: #000;
+    font-family: 'Montserrat';
 }
 
 .section3_1 .carousel-container {
