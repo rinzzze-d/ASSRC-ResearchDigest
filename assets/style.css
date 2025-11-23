@@ -235,6 +235,7 @@ justify-content: left; }
     align-items: center;
     justify-content: center;
     padding: 20px;
+    height: 80vh;
 }
 
 .section2-container {
