@@ -482,6 +482,7 @@ justify-content: left; }
 }
 .section3 {
     flex-direction: column;
+    height: 90vh;
 }
 .section3 .card {
     margin: 10px;
