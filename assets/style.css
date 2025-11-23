@@ -549,11 +549,10 @@ justify-content: left; }
 
 .footer-column {
     flex: 1;
-    max-width: 500px;
 }
 
 .footer-column h3 {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .footer-column p {
