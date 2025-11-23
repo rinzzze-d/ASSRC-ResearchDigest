@@ -115,20 +115,9 @@ nav a, .dropbtn {
 flex-direction: column;}
 .section5 { background-image: url('images/BG-5.png');
  width: 97.3%;
-height: 50vh; }
+height: 50vh;
+justify-content: left; }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-.bottom-image {
-    width: 100%;
-    height: auto;
-    display: block;
-}
 
 .carousel-container {
     position: relative;
@@ -542,4 +531,37 @@ footer {
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
 }
+
+
+.three-column-footer {
+    display: flex;
+    justify-content: flex-start; /* ← this aligns columns to the left */
+    background: transparent;
+    color: rgb(0, 0, 0);
+    gap: 250px;
+    font-family: 'Poppins', sans-serif;
+    text-align: left; /* ← text inside columns is left aligned */
+    align-items: flex-start; /* ← makes the tops align left */
+    margin-top: 5px;
+    margin-left: 70px;
+}
+
+
+.footer-column {
+    flex: 1;
+    max-width: 500px;
+}
+
+.footer-column h3 {
+    font-size: 1rem;
+}
+
+.footer-column p {
+    font-size: 0.8rem;
+    margin: 5px 0;
+    color: #000000;
+}
+
+
+
 
