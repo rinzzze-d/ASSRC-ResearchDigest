@@ -405,7 +405,9 @@ footer {
     gap: 15px;
     transition: transform 0.5s ease;
 }
-
+.section3_1 {
+    flex-direction: column;
+}
 .section3_1 .card {
     width: 290px;
     height: 400px; 
@@ -415,7 +417,7 @@ footer {
 
 .section3_1 .left-arrow {
     position: absolute;
-    left: 100px; /* Adjust as needed to sit just outside the carousel */
+    left: 150px; /* Adjust as needed to sit just outside the carousel */
     top: 50%;
     transform: translateY(-50%); /* Centers vertically */
     width: 40px;
@@ -432,7 +434,7 @@ footer {
 
 .section3_1 .right-arrow {
     position: absolute;
-    right: 100px; /* Adjust as needed to sit just outside the carousel */
+    right: 159px; /* Adjust as needed to sit just outside the carousel */
     top: 50%;
     transform: translateY(-50%); /* Centers vertically */
     width: 40px;
@@ -445,4 +447,65 @@ footer {
     font-size: 1.5rem;
     cursor: pointer;
     z-index: 10;
+}
+.section3_1 .caption {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 850;
+    margin: 5px;
+    margin-left: 10px;
+}
+/* Carousel header: Positions h1/h2 above the carousel (matches Section 1) */
+.carousel-header {
+    text-align: center; /* Centers the text */
+    margin-bottom: 30px; /* Space between header and carousel (adjust as needed) */
+}
+
+
+/* Section 3_1 specific overrides (if needed for fine-tuning) */
+.section3_1 .carousel-header h1 {
+    font-size: 3rem; /* Matches Section 1's h1 size */
+    font-weight: bold;
+    top: -100px; /* Adjusts vertical position */
+    margin-top: -50px; /* Matches Section 1's negative margin for positioning */
+    color: white;
+    text-align: center;
+    margin-bottom: -30px; /* Increase from 30px for more separation */
+}
+.section3 {
+    flex-direction: column;
+}
+.section3 .card {
+    margin: 10px;
+}
+.section3 h1 {
+    font-size: 3rem; /* Matches Section 1's h1 size */
+    font-weight: bold;
+    top: -100px; /* Adjusts vertical position */
+    margin-top: -50px; /* Matches Section 1's negative margin for positioning */
+    color: white;
+    text-align: center;
+    margin-bottom: -30px; /* Increase from 30px for more separation */
+}
+
+.section3 .caption {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 850;
+    margin: 5px;
+    margin-left: 10px;
 }
