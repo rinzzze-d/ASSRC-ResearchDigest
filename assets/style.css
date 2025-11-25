@@ -119,6 +119,8 @@ height: 50vh;
 justify-content: left; }
 .section6 { background-image: url('images/BG-2.2.png'); }
 .section7 { background-image: url('images/BG-2.2.png'); }
+.section8 { background-image: url('images/BG-2.3.png'); }
+.section9 { background-image: url('images/BG-2.4.png'); }
 
 .carousel-container {
     position: relative;
@@ -519,8 +521,8 @@ justify-content: left; }
     margin-bottom: 20px;
 }
 .section4 img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     margin: 0 15px;
 }
 .section4 img:hover {
@@ -530,7 +532,7 @@ justify-content: left; }
 .section4 h1 {
     margin-top: 7px;
     margin-bottom: 3px;
-    font-size: 2rem;
+    font-size: 1.7rem;
     font-weight: normal;
     color: rgb(0, 0, 0);
     font-family: 'Poppins', sans-serif;
@@ -644,6 +646,26 @@ justify-content: left; }
     font-weight: 850;
     margin: 5px;
     margin-left: 10px;
+}
+
+
+.section8 {
+    flex-direction: column;
+    height: 120vh;
+}
+.section8 h1 {
+    font-size: 4rem; /* Matches Section 1's h1 size */
+    font-weight: bolder;
+    top: 1px; /* Adjusts vertical position */
+    margin-top: -370px; /* Matches Section 1's negative margin for positioning */
+    color: #002060;
+    text-align: center;
+    margin-bottom: -30px; /* Increase from 30px for more separation */
+}
+
+.section9 {
+    flex-direction: column;
+    height: 100vh;
 }
 
 
