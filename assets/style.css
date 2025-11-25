@@ -117,7 +117,8 @@ flex-direction: column;}
  width: 97.3%;
 height: 50vh;
 justify-content: left; }
-
+.section6 { background-image: url('images/BG-2.2.png'); }
+.section7 { background-image: url('images/BG-2.2.png'); }
 
 .carousel-container {
     position: relative;
@@ -174,7 +175,7 @@ justify-content: left; }
     color: white;
     text-align: left;
     background: transparent;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Monserrat', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
     margin: 5px;
@@ -279,6 +280,7 @@ justify-content: left; }
     position: relative;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
 }
 
 .section2 .card:hover {
@@ -564,5 +566,84 @@ justify-content: left; }
 }
 
 
+
+.section6 {
+    flex-direction: column;
+    height: 150vh;
+}
+.section6 .card {
+    margin: 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+.section6 h1 {
+    font-size: 3.5rem; /* Matches Section 1's h1 size */
+    font-weight: bolder;
+    top: -100px; /* Adjusts vertical position */
+    margin-top: 100px; /* Matches Section 1's negative margin for positioning */
+    color: #002060;
+    text-align: center;
+    margin-bottom: -40px; /* Increase from 30px for more separation */
+}
+
+.section6 .caption {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 850;
+    margin: 5px;
+    margin-left: 10px;
+}
+
+.section7 {
+    flex-direction: column;
+    height: 150vh;
+}
+.section7 .card {
+    margin: 40px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    width: 1000px;
+    height: 250px; 
+    flex: 0 0 auto;
+    border: 15px solid #f1f1f1;
+    border-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: none;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 0px;
+}
+.section7 h1 {
+    font-size: 4rem; /* Matches Section 1's h1 size */
+    font-weight: bolder;
+    top: -100px; /* Adjusts vertical position */
+    margin-top: 5px; /* Matches Section 1's negative margin for positioning */
+    color: #002060;
+    text-align: center;
+    margin-bottom: -30px; /* Increase from 30px for more separation */
+}
+
+.section7 .caption {
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    width: 100%;
+    color: white;
+    text-align: left;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 850;
+    margin: 5px;
+    margin-left: 10px;
+}
 
 
