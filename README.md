@@ -48,23 +48,28 @@ No dependencies or build step required.
 2. Open `index.html` in your browser, or visit the live demo above.
 
 ## Project Structure
+
+```
 ├── index.html
 ├── publications/
-│ ├── publications.html
-│ ├── journal-articles.html
-│ ├── books.html
-│ ├── conference-papers.html
-│ ├── project-abstract.html
-│ ├── infographics.html
-│ ├── newsletter.html
-│ └── manuals.html
+│   ├── publications.html
+│   ├── journal-articles.html
+│   ├── books.html
+│   ├── conference-papers.html
+│   ├── project-abstract.html
+│   ├── infographics.html
+│   ├── newsletter.html
+│   └── manuals.html
 ├── stories/
-│ ├── stories.html
-│ ├── events-updates.html
-│ ├── field-notes.html
-│ └── press-release.html
+│   ├── stories.html
+│   ├── events-updates.html
+│   ├── field-notes.html
+│   └── press-release.html
 └── assets/
-└── images/
+    ├── images/
+    ├── script.js
+    └── style.css
+```
 
 ## Why It Was Discontinued
 
