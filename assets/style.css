@@ -16,19 +16,19 @@ nav {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    position: relative; /* Default: not fixed */
+    position: relative;
     font-weight: bold;
     width: 100%;
-    z-index: 1000; /* Ensures it stays above other content */
-    transition: all 0.3s ease; /* Smooth transition when fixing */
+    z-index: 1000; 
+    transition: all 0.3s ease; 
 }
-/* Fixed state: Applied via JS when scrolled */
+
 nav.fixed {
     position: fixed;
     top: 0;
     left: 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Optional: Adds a subtle shadow for depth */
-    /* Optional: Adjust padding or height if needed for better fit */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  
 }
 
 .logo {
@@ -230,10 +230,9 @@ justify-content: left; }
     margin: 0 10px;
     z-index: 10;
 }
-/* Section 2: Two-column layout */
+
 .section2 {
     background-image: url('images/BG-2.png');
-    /* Remove default centering; we'll handle layout inside */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -243,17 +242,17 @@ justify-content: left; }
 
 .section2-container {
     display: flex;
-    align-items: flex-start; /* Align top for better spacing */
+    align-items: flex-start; 
     justify-content: space-between;
     width: 100%;
-    max-width: 1200px; /* Prevent it from stretching too wide */
-    gap: 40px; /* Space between columns */
+    max-width: 1200px; 
+    gap: 40px; 
 }
 
-/* Left column: Carousel */
+
 .carouselSection2 {
-    position: relative; /* For absolute arrow positioning */
-    flex: 1; /* Takes up available space */
+    position: relative; 
+    flex: 1; 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -311,10 +310,10 @@ justify-content: left; }
     margin-left: -25px;
 }
 
-/* Arrows: Positioned absolutely next to the carousel */
+
 .arrow.left {
     position: absolute;
-    left: 50px; /* Adjust to sit just outside the carousel window */
+    left: 50px; 
     top: 50%;
     transform: translateY(-50%);
     width: 40px;
@@ -331,7 +330,7 @@ justify-content: left; }
 
 .arrow.right {
     position: absolute;
-    right: 50px; /* Adjust to sit just outside the carousel window */
+    right: 50px; 
     top: 50%;
     transform: translateY(-50%);
     width: 40px;
@@ -351,9 +350,9 @@ justify-content: left; }
     background-color: #01287569;
 }
 
-/* Right column: Header, Image, Paragraph */
+
 .right-content {
-    flex: 1; /* Takes up available space */
+    flex: 1; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -417,9 +416,9 @@ justify-content: left; }
 
 .section3_1 .left-arrow {
     position: absolute;
-    left: 150px; /* Adjust as needed to sit just outside the carousel */
+    left: 150px; 
     top: 50%;
-    transform: translateY(-50%); /* Centers vertically */
+    transform: translateY(-50%); 
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -434,9 +433,9 @@ justify-content: left; }
 
 .section3_1 .right-arrow {
     position: absolute;
-    right: 159px; /* Adjust as needed to sit just outside the carousel */
+    right: 159px; 
     top: 50%;
-    transform: translateY(-50%); /* Centers vertically */
+    transform: translateY(-50%);
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -462,10 +461,10 @@ justify-content: left; }
     margin: 5px;
     margin-left: 10px;
 }
-/* Carousel header: Positions h1/h2 above the carousel (matches Section 1) */
+
 .carousel-header {
-    text-align: center; /* Centers the text */
-    margin-bottom: 30px; /* Space between header and carousel (adjust as needed) */
+    text-align: center; 
+    margin-bottom: 30px; 
 }
 
 .section3_1 .right-arrow:hover {
@@ -474,15 +473,15 @@ justify-content: left; }
 .section3_1 .left-arrow:hover {
     background-color: #ffffff5c;
 }
-/* Section 3_1 specific overrides (if needed for fine-tuning) */
+
 .section3_1 .carousel-header h1 {
-    font-size: 3rem; /* Matches Section 1's h1 size */
+    font-size: 3rem; 
     font-weight: bold;
-    top: -100px; /* Adjusts vertical position */
-    margin-top: -50px; /* Matches Section 1's negative margin for positioning */
+    top: -100px; 
+    margin-top: -50px; 
     color: white;
     text-align: center;
-    margin-bottom: -30px; /* Increase from 30px for more separation */
+    margin-bottom: -30px; 
 }
 .section3 {
     flex-direction: column;
@@ -492,13 +491,13 @@ justify-content: left; }
     margin: 10px;
 }
 .section3 h1 {
-    font-size: 3rem; /* Matches Section 1's h1 size */
+    font-size: 3rem;
     font-weight: bold;
-    top: -100px; /* Adjusts vertical position */
-    margin-top: -50px; /* Matches Section 1's negative margin for positioning */
+    top: -100px; 
+    margin-top: -50px; 
     color: white;
     text-align: center;
-    margin-bottom: -30px; /* Increase from 30px for more separation */
+    margin-bottom: -30px; 
 }
 
 .section3 .caption {
@@ -541,13 +540,13 @@ justify-content: left; }
 
 .three-column-footer {
     display: flex;
-    justify-content: flex-start; /* ← this aligns columns to the left */
+    justify-content: flex-start; 
     background: transparent;
     color: rgb(0, 0, 0);
     gap: 250px;
     font-family: 'Poppins', sans-serif;
-    text-align: left; /* ← text inside columns is left aligned */
-    align-items: flex-start; /* ← makes the tops align left */
+    text-align: left; 
+    align-items: flex-start; 
     margin-top: 5px;
     margin-left: 70px;
 }
@@ -578,14 +577,13 @@ justify-content: left; }
     box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 .section6 h1 {
-    font-size: 3.5rem; /* Matches Section 1's h1 size */
+    font-size: 3.5rem;
     font-weight: bolder;
-    top: -100px; /* Adjusts vertical position */
-    margin-top: 100px; /* Matches Section 1's negative margin for positioning */
+    top: -100px; 
+    margin-top: 100px; 
     color: #002060;
     text-align: center;
-    margin-bottom: -40px; /* Increase from 30px for more separation */
-}
+    margin-bottom: -40px; 
 
 .section6 .caption {
     position: absolute;
@@ -624,14 +622,13 @@ justify-content: left; }
     margin-left: 0px;
 }
 .section7 h1 {
-    font-size: 4rem; /* Matches Section 1's h1 size */
+    font-size: 4rem;
     font-weight: bolder;
-    top: -100px; /* Adjusts vertical position */
-    margin-top: 5px; /* Matches Section 1's negative margin for positioning */
+    top: -100px; 
+    margin-top: 5px; 
     color: #002060;
     text-align: center;
-    margin-bottom: -30px; /* Increase from 30px for more separation */
-}
+    margin-bottom: -30px; 
 
 .section7 .caption {
     position: absolute;
@@ -654,13 +651,13 @@ justify-content: left; }
     height: 120vh;
 }
 .section8 h1 {
-    font-size: 4rem; /* Matches Section 1's h1 size */
+    font-size: 4rem;
     font-weight: bolder;
-    top: 1px; /* Adjusts vertical position */
-    margin-top: -370px; /* Matches Section 1's negative margin for positioning */
+    top: 1px;
+    margin-top: -370px; 
     color: #002060;
     text-align: center;
-    margin-bottom: -30px; /* Increase from 30px for more separation */
+    margin-bottom: -30px; 
 }
 
 .section9 {
