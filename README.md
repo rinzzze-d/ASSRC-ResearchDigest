@@ -38,13 +38,7 @@ It also includes a shared header banner, navigation with dropdown menus, and a f
 - **HTML5**
 - **CSS3**
 - **JavaScript**
-- 
-## Credits & Ownership
-
-This project was built for the Ateneo Social Science Research Center (ASSRC), Ateneo de Naga University. The content, logos, and images are the center's. The site design and layout were provided to me as a reference, and my role was to implement them in HTML, CSS, and JavaScript as a student research assistant.
-
-This repository is shared for portfolio purposes only and is not licensed for reuse.
-
+  
 ## Getting Started
 
 No dependencies or build step required.
@@ -56,4 +50,42 @@ No dependencies or build step required.
 2. Open `index.html` in your browser, or visit the live demo above.
 
 ## Project Structure
-## Project Structure
+├── index.html
+├── publications/
+│ ├── publications.html
+│ ├── journal-articles.html
+│ ├── books.html
+│ ├── conference-papers.html
+│ ├── project-abstract.html
+│ ├── infographics.html
+│ ├── newsletter.html
+│ └── manuals.html
+├── stories/
+│ ├── stories.html
+│ ├── events-updates.html
+│ ├── field-notes.html
+│ └── press-release.html
+└── assets/
+└── images/
+
+## Why It Was Discontinued
+
+The center needed a platform its researchers and staff could update on their own. In this version, every new entry meant editing HTML, so WordPress was the more sustainable choice. It was a practical decision, and it taught me early how much maintainability and the end user's technical comfort should shape technology choices.
+
+## What I Learned
+
+- Planning a multi-page site's information architecture around a client's content
+- Building consistent layouts and dropdown navigation in plain HTML, CSS, and JavaScript
+- Deploying with GitHub Pages
+- Working with a real stakeholder and adapting when requirements changed
+
+  ## Credits & Ownership
+
+This project was built for the Ateneo Social Science Research Center (ASSRC), Ateneo de Naga University. The content, logos, and images are the center's. The site design and layout were provided to me as a reference, and my role was to implement them in HTML, CSS, and JavaScript as a student research assistant.
+
+This repository is shared for portfolio purposes only and is not licensed for reuse.
+
+
+## Acknowledgments
+
+Built for the Ateneo Social Science Research Center, Ateneo de Naga University.
