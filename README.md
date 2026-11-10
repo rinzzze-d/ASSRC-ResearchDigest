@@ -1,5 +1,3 @@
-# ASSRC-RD
-
 # ASSRC Research Digest
 
 A static front-end website for the Ateneo Social Science Research Center (ASSRC) at Ateneo de Naga University, built during my first year of college (2025) while working as a student researcher/assistant. The digest was meant to be a central, browsable place for the center's publications and stories.
