@@ -1,2 +1,59 @@
 # ASSRC-RD
 
+# ASSRC Research Digest
+
+A static front-end website for the Ateneo Social Science Research Center (ASSRC) at Ateneo de Naga University, built during my first year of college (2025) while working as a student researcher/assistant. The digest was meant to be a central, browsable place for the center's publications and stories.
+
+**Live demo:** https://rinzzze-d.github.io/ASSRC-ResearchDigest/
+
+> **Status: Archived / Unfinished.** The center ultimately moved to WordPress so staff could update content without editing code. Development on this version stopped, and the repository is kept as a record of the work completed.
+
+## Overview
+
+The site organizes the center's output into two main areas:
+
+- **Publications:** Journal Articles, Books, Conference Papers, Project Abstracts, Infographics, Newsletters, and Manuals
+- **Stories:** Events & Updates, Field Notes, and Press Releases
+
+It also includes a shared header banner, navigation with dropdown menus, and a footer with contact details, partner networks, and quick links.
+
+## Features Completed
+
+- Multi-page site structure with a consistent header, logo, and footer
+- Navigation bar with dropdown menus for Publications and Stories
+- Landing page for each section, with card-based links to its sub-pages
+- Separate page templates for each publication and story category
+- Responsive viewport setup
+- Footer with contact information, network partners, and external links
+- Deployed on GitHub Pages
+
+## Not Implemented
+
+- Final content and images (several cards still use placeholder images)
+- A way to add or edit entries without changing the HTML
+- Search or filtering of publications
+- A CMS, or content management system 
+## Built With
+
+- **HTML5**
+- **CSS3**
+- **JavaScript**
+- 
+## Credits & Ownership
+
+This project was built for the Ateneo Social Science Research Center (ASSRC), Ateneo de Naga University. The content, logos, and images are the center's. The site design and layout were provided to me as a reference, and my role was to implement them in HTML, CSS, and JavaScript as a student research assistant.
+
+This repository is shared for portfolio purposes only and is not licensed for reuse.
+
+## Getting Started
+
+No dependencies or build step required.
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/rinzzze-d/ASSRC-ResearchDigest.git
+   ```
+2. Open `index.html` in your browser, or visit the live demo above.
+
+## Project Structure
+## Project Structure
