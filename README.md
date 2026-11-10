@@ -79,7 +79,7 @@ The center needed a platform its researchers and staff could update on their own
 - Deploying with GitHub Pages
 - Working with a real stakeholder and adapting when requirements changed
 
-  ## Credits & Ownership
+## Credits & Ownership
 
 This project was built for the Ateneo Social Science Research Center (ASSRC), Ateneo de Naga University. The content, logos, and images are the center's. The site design and layout were provided to me as a reference, and my role was to implement them in HTML, CSS, and JavaScript as a student research assistant.
 
